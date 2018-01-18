@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  .page-header
+    h3 Verify phone
+
+  form.form-horizontal(id='verify-form', method='POST')
+    .form-group
+      label.col-sm-3.control-label(for='code') Code
+      .col-sm-7
+        input.form-control(name='code', id='code', placeholder='Please enter code', autofocus, required)
+    .form-group
+      .col-sm-offset-3.col-sm-7
+        button.btn.btn-success(type='submit')
+          i.fa.fa-check
+          | Verify
